@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     <div className="w-screen">
       <NavBar />
       {children}
-      <footer className="flex items-center justify-center w-full h-screen border-t bg-gray-500" />
+      <footer className="flex items-center justify-center w-full h-screen bg-surface" />
     </div>
   );
 };
