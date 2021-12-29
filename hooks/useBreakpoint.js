@@ -2,7 +2,12 @@ import { useState, useEffect } from 'react';
 import resolveConfig from 'tailwindcss/resolveConfig';
 import tailwindConfig from '../tailwind.config';
 
-const useMediaQuery = (size) => {
+/**
+ * [Checks if the current screen size matches the provided breakpoint]
+ * @param {[String]} breakpoint [any of the breakpoints set in the tailwind theme]
+ * @return {[boolean]} [returns true if the current screen size is greater or equal than the provided breakpoint]
+ */
+const useBreakpoint = (size) => {
   const [matches, setMatches] = useState(false);
   const {
     theme: { screens },
@@ -25,4 +30,4 @@ const useMediaQuery = (size) => {
   return matches;
 };
 
-export default useMediaQuery;
+export default useBreakpoint;
