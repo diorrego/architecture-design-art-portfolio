@@ -32,15 +32,17 @@ const NavBar = () => {
       justify-around
       w-full
       h-16
-      bg-background
       text-black-text
       z-50
       ${
-        scrolled &&
-        `
+        scrolled
+          ? `
         bg-surface
         text-white-text
-      `
+        `
+          : `
+        bg-background
+        `
       }
     `,
   };
