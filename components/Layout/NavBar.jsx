@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import useMediaQuery from '../../hooks/useBreakpoint';
 import { HiMenu } from 'react-icons/hi';
+import Link from 'next/link';
 
 const NavBar = () => {
   const mobileScreen = useMediaQuery('sm');
@@ -46,13 +47,18 @@ const NavBar = () => {
 
   return (
     <div className={classes.fixedContainer}>
-      <div className="font-mono">Sofía Orrego Brito</div>
+      <Link href="/" passHref>
+        <button className="font-mono">Sofía Orrego Brito</button>
+      </Link>
       {mobileScreen && (
-        <ul className="flex flex-row xl:gap-x-20 md:gap-x-16 sm:gap-x-6">
-          <li>Arte</li>
-          <li>Arquitectura</li>
-          <li>Sobre mí</li>
-        </ul>
+        <div className="flex flex-row xl:gap-x-20 md:gap-x-16 sm:gap-x-6">
+          <Link href="/art" passHref>
+            <button>Arte</button>
+          </Link>
+          <Link href="/architecture" passHref>
+            <button>Arquitectura</button>
+          </Link>
+        </div>
       )}
       {!mobileScreen && <HiMenu />}
     </div>
