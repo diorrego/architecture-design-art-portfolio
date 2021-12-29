@@ -46,7 +46,7 @@ const NavBar = () => {
 
   return (
     <div className={classes.fixedContainer}>
-      <div className="font-mono">Sofía Orrego</div>
+      <div className="font-mono">Sofía Orrego Brito</div>
       {mobileScreen && (
         <ul className="flex flex-row xl:gap-x-20 md:gap-x-16 sm:gap-x-6">
           <li>Arte</li>
