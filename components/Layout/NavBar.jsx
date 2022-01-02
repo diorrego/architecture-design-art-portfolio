@@ -32,7 +32,7 @@ const NavBar = () => {
       justify-around
       w-full
       h-16
-      text-black-text
+      text-white-text
       z-50
       ${
         scrolled
@@ -41,7 +41,7 @@ const NavBar = () => {
         text-white-text
         `
           : `
-        bg-background
+        bg-surface
         `
       }
     `,
@@ -49,9 +49,13 @@ const NavBar = () => {
 
   return (
     <div className={classes.fixedContainer}>
-      <Link href="/" passHref>
-        <button className="font-mono">Sofía Orrego Brito</button>
-      </Link>
+      <div>
+        <Link href="/" passHref>
+          <button className="rounded-full border-2 w-10 h-10 border-white text-2xl pb-2">S</button>        
+        </Link>
+        <span className="inline pl-1">ofía Orrego Brito</span>
+      </div>
+      
       {mobileScreen && (
         <div className="flex flex-row xl:gap-x-20 md:gap-x-16 sm:gap-x-6">
           <Link href="/art" passHref>
