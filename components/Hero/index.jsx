@@ -5,7 +5,7 @@ import HeroIllu from './../elements/HeroIllu';
 const Hero = () => {
   return (
     <section>
-      <div className="gap-16 flex flex-col sm:flex-row items-center justify-evenly pt-20">
+      <div className="flex flex-col sm:flex-row items-center justify-evenly pt-20 px-20">
         <div className="w-3/12">
           <HeroIllu />
         </div>
