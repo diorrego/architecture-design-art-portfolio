@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-background text-black-text font-sans;
+  @apply bg-white text-black-text font-sans;
 }
 
 /* Scrollbar */
