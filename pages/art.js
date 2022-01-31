@@ -10,6 +10,8 @@ export default function Art() {
           <title>Sofía Orrego | Arte</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
+
+        
       </Layout>
     </div>
   );
