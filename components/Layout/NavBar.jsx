@@ -51,11 +51,15 @@ const NavBar = () => {
     <div className={classes.fixedContainer}>
       <div>
         <Link href="/" passHref>
-          <button className="rounded-full border-2 w-10 h-10 border-white text-2xl pb-2">S</button>        
+          <button>
+            <div className="rounded-full border-2 w-10 h-10 border-white text-2xl pb-2 inline-block">
+              S
+            </div>
+            <span className="inline pl-1">ofía Orrego Brito</span>
+          </button>
         </Link>
-        <span className="inline pl-1">ofía Orrego Brito</span>
       </div>
-      
+
       {mobileScreen && (
         <div className="flex flex-row xl:gap-x-20 md:gap-x-16 sm:gap-x-6">
           <Link href="/art" passHref>
